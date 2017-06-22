@@ -12,6 +12,6 @@ KDIR := /lib/modules/$(KVER)/build
 all:
 	$(MAKE) -C $(KDIR) M=$(PWD)
 clean:
-	rm -rf *.o *.mod.c *.ko *.symvers *.order *.markers *~
+	rm -rf *.o *.mod.c *.ko *.symvers *.order *.markers *~ .*.cmd .tmp_versions/
 
 endif
